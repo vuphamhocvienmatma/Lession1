@@ -9,44 +9,88 @@ namespace Lession1
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            for (int i = 0; i < 10; i++)
+
+            //Bài 1
+            //string text = "Cong ty Stanford – Dao tao va phat trien cong nghe";
+
+            //string[] spilted = text.Split(" ");
+
+            //int i = 0;
+
+            //foreach (var item in spilted)
+            //{
+            //    Console.WriteLine("Kí tự trong mảng: " + i + " " + item);
+            //    i++;
+            //}          
+
+            //bài 2
+            //Khai báo biến
+
+            //int n = 0;
+
+            //Console.Write("Nhập số phần tử của mảng gồm n = ");
+
+            //n = int.Parse(Console.ReadLine());
+
+            //double[] arr = new double[n];
+
+            ////Nhập các thông tin cho các phần tử
+            //for (int i = 0; i < n; i++) { 
+            //    Console.Write("Phần từ thứ i của mảng Arr là: arr[" + i + "] = ");               
+            //    arr[i] = double.Parse(Console.ReadLine());
+            //}
+
+            //double max = arr[0];
+
+            //double min = arr[0];
+
+            ////Tìm max, min
+            //for (int i = 1; i < n; i++)
+            //{
+            //    if (arr[i] > max)
+            //    {
+            //        max = arr[i];
+            //    }
+
+            //    if (arr[i] < min)
+            //    {
+            //        min = arr[i];
+            //    }
+            //}
+            //Console.WriteLine("Max" + max);
+            //Console.WriteLine("Min" + min);
+
+            //bài 3
+            int n = 0;
+
+            Console.Write("Nhập số phần tử của mảng gồm n = ");
+
+            n = int.Parse(Console.ReadLine());
+
+            double[] arr = new double[n];
+
+            //Nhập các thông tin cho các phần tử
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("Ánh óc chó, ánh ăn cứt gà, ánh cười khà khà");
+                Console.Write("Phần từ thứ i của mảng Arr là: arr[" + i + "] = ");
+                arr[i] = double.Parse(Console.ReadLine());
             }
-            for (int i = 10 - 1; i >= 0; i--)
-            {
 
+            double temp = 0;
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                  
+                }
             }
 
-
-
-
-            int[] Kteam = new int[3];
-
-            string[] Kteam1 = new string[] { "Anh", "Love", "Em" };
-
-            Kteam1.SetValue("Tao", 0);
-            Kteam1.SetValue("May", 2);
-            Kteam1[0] = "";
-
-            object giaTri = Kteam1.GetValue(1);
-
-
-            for (int i = 0; i < Kteam1.Length; i++) // Vì các phần tử có chỉ số là 0 1 2 nên điều kiện dừng là i < 3
+            //In kết quả sau khi sắp xếp tăng dần
+            Console.WriteLine("Dãy sắp xếp tăng dần là: ");
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("đang ở phần tử: " + Kteam1[i]);
-            }
-
-            Console.WriteLine(giaTri);
-
-            List<String> a = new List<string>();
-            a.Add("a");
-            a.Add("d");
-            a.Add("l");
-            a.Insert(10, "v");
-            foreach (var item in a)
-            {
-                Console.WriteLine(item);
+                Console.WriteLine(arr[i]);
             }
             Console.ReadKey();
         }
