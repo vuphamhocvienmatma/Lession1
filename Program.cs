@@ -20,10 +20,6 @@ namespace Lession1
 
 
 
-            //foreach (var item in a)
-            //{
-            //    Console.WriteLine(item);
-            //}
 
             int[] Kteam = new int[3];
 
